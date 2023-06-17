@@ -20,6 +20,7 @@ fig = px.scatter(df, x='BMI', y='BloodPressure', color='Age', title='Diabetes Da
 
 # Create the Dash app
 app = dash.Dash(__name__)
+server = app.server
 
 # Define the app layout
 app.layout = html.Div([
