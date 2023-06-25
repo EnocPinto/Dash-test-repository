@@ -23,7 +23,7 @@ vars_OPRE = [var for var in df.columns if var.startswith('OPRE')]
 vars_EMPL = [var for var in df.columns if var.startswith('EMPL')]
 
 
-app = dash.Dash(external_stylesheets=[dbc.themes.FLATLY])
+app = dash.Dash(__name__)
 server = app.server
 
 sidebar = html.Div(
